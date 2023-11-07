@@ -1,9 +1,15 @@
+import React from 'react';
+import Banner from '../../components/Banner';
+import Card from '../../components/Card';
+
 function Home() {
-  return (
+
+	return (
     <div>
-      <h1> Page d'accueil 🏠</h1>
+      <Banner />
+      <Card />
     </div>
-  )
+	)
 }
 
 export default Home
