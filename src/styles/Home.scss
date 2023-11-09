@@ -1,0 +1,15 @@
+.home {
+    .banner-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .banner-title {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        color: #FFF;
+        font-size: 48px;
+        line-height: 142.6%;
+    }
+}
