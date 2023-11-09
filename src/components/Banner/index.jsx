@@ -1,11 +1,17 @@
-import ImgAccueil from '../../assets/BannerAccueil.svg'
-function Banner() {
-	return (
-    <div>
-        <img src={ImgAccueil} alt='Image_Accueil' />
-        <h1>Chez vous, partout et ailleurs</h1>
-    </div>
-    )
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../../styles/Banner.scss';
+
+function Banner({ imgSrc }) {
+    return (
+        <div className='banner'>
+            <img className='banner_img' src={imgSrc} alt='Banner' />
+        </div>
+    );
 }
 
-export default Banner
+Banner.propTypes = {
+    imgSrc: PropTypes.string.isRequired,
+};
+
+export default Banner;

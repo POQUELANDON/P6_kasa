@@ -1,14 +1,18 @@
 import React from 'react';
 import Banner from '../../components/Banner';
-import Card from '../../components/Card';
+import CardsList from '../../components/CardsList';
+import ImgAccueil from '../../assets/BannerAccueil.svg';
 
 function Home() {
 
 	return (
-    <div>
-      <Banner />
-      <Card />
-    </div>
+      <section>
+        <h1>Chez vous, partout et ailleurs</h1>
+        <Banner imgSrc={ImgAccueil} />
+      <section className='gallery'>
+        <CardsList />
+      </section>
+      </section>
 	)
 }
 

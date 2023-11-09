@@ -1,8 +1,9 @@
+import Banner from '../../components/Banner';
+import ImgApropos from '../../assets/BannerApropos.svg';
+
 function About() {
   return (
-    <div>
-      <h1>À propos</h1>
-    </div>
+      <Banner imgSrc={ImgApropos} />
   )
 }
 
