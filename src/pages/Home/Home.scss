@@ -1,0 +1,16 @@
+.home {
+  .banner-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-title {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 48px;
+  }
+}
