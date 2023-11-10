@@ -13,6 +13,7 @@ function AppRouter() {
   return (
     <Router>
       <Header />
+        <main>
       <ListeProprietes url={'/logements.json'}>
         {(logementsData) => (
           <LogementContext.Provider value={logementsData}>
@@ -25,6 +26,7 @@ function AppRouter() {
           </LogementContext.Provider>
         )}
       </ListeProprietes>
+        </main>
       <Footer />
     </Router>
   )

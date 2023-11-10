@@ -12,13 +12,22 @@ body {
   flex-wrap: wrap;
   main {
     display: flex;
-    width: 1440px;
-    padding-top: 40px;
+    width: 1240px;
+    padding: 50px 0 50px 0;
     flex-direction: column;
     align-items: stretch;
-    gap: 38px;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: stretch;
+    justify-content: flex-start;
+    & div {
+      gap: 43px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: flex-start;
+    }
   }
 }
 code {

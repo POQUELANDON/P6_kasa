@@ -1,11 +1,14 @@
 import Banner from '../../components/Banner'
 import ImgApropos from '../../assets/BannerApropos.svg'
 import Collapse from '../../components/Collapse'
+import '../About/About.scss';
 
 function About() {
   return (
-    <section className="about_container">
+    <div className="about-container">
+      <section className='banner-container'>
       <Banner imgSrc={ImgApropos} />
+      </section>
       <section className="about-collapses">
         <Collapse
           title="Fiabilité"
@@ -24,7 +27,7 @@ function About() {
           content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
       </section>
-    </section>
+    </div>
   )
 }
 

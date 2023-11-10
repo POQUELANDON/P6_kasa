@@ -2,9 +2,8 @@
     display: flex;
     width: 100%;
     height: 68px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 52%;
     & img{
         width: 210.322px;
         height: 68px;
@@ -21,7 +20,6 @@
             font-size: 24px;
             font-weight: 500;
             line-height: 142.6%;
-            /* 34.224px */
             }
             a.active-link {
                 text-decoration-line: underline;
