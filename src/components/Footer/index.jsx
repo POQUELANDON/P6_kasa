@@ -1,5 +1,5 @@
 // Importation du logo et du fichier de style
-import { ReactComponent as Logo } from '../../assets/LOGO.svg';
+import { ReactComponent as Logo } from '../../assets/LOGOfooter.svg';
 import '../Footer/Footer.scss';
 
 // Définition du composant Footer

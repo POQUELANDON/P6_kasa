@@ -1,12 +1,15 @@
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    grid-template-columns: repeat(3, 30%);
     grid-gap: 50px 60px;
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     position: relative;
-    background: #f6f6f6;
+    background:var(--collapse-bg-color);
     border-radius: 25px;
     justify-items: center;
-    padding: 4.8% 4%;
-}
+    padding: 43px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }

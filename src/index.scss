@@ -1,33 +1,39 @@
 * {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
+:root {
+  --main-bg-color: #fff;
+  --collapse-btn-bg-color: #ff6060;
+  --collapse-bg-color: #f6f6f6;
+  --footer-bg-color: #000000;
+  --font-color: #ff6060;
+  --font-title-color: #ffffff;
+}
+
+@mixin small-screen {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}
 body {
-  margin: 0;
-  padding-top: 45px;
-  width: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  main {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 0;
+  margin: 0;
+  & main,
+  header {
     display: flex;
-    width: 1240px;
-    padding: 50px 0 50px 0;
+    padding: 0 100px;
     flex-direction: column;
-    align-items: stretch;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: flex-start;
-    & div {
-      gap: 43px;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      flex-wrap: wrap;
-      align-content: stretch;
-      justify-content: flex-start;
-    }
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
 }
 code {
