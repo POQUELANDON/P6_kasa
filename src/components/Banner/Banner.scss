@@ -2,11 +2,13 @@
   width: 100%;
   height: 223px;
   border-radius: 25px;
-  mix-blend-mode: darken;
-  background: #000;
+  background: var(--footer-bg-color);
   &_img {
     width: 100%;
     height: 100%;
     border-radius: 25px;
+  }
+  @media (max-width: 768px) {
+    height: 111px;
   }
 }

@@ -7,6 +7,10 @@
   align-content: center;
   gap: 38px;
   padding: 38px 0;
+  @media (max-width: 768px) {
+    padding: 19px 0;
+    gap: 19px;
+  }
   .banner-container {
     position: relative;
     width: 100%;
@@ -21,6 +25,10 @@
     align-items: stretch;
     width: 83%;
     gap: 30px;
+    @media (max-width: 768px) {
+      gap: 20px;
+      width: 100%;
+    }
   }
   .collapse-button {
     border-radius: 5px;

@@ -20,4 +20,16 @@
     text-align: center;
     font-size: 24px;
   }
+  @media (max-width: 768px) {
+    padding: 66px 0 58px 0;
+    gap: 0;
+    &-logo {
+      width: 122px;
+      height: 39.4px;
+    }
+    &-title {
+      width: 134px;
+      font-size: 12px;
+    }
+  }
 }

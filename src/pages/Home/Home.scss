@@ -18,7 +18,15 @@
   .banner-title {
     position: absolute;
     z-index: 1;
-    color: #fff;
+    color: var(--font-title-color);
     font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    padding: 27px 0;
+    gap: 23px;
+    .banner-title {
+      font-size: 24px;
+      padding: 0 23% 0 5%;
+    }
   }
 }

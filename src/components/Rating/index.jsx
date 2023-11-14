@@ -2,7 +2,7 @@ import StarSVG from './StarSVG.jsx';
 
 function Rating({ rating }) {
   return (
-    <div>
+    <div className='rating-icon'>
       <StarSVG fill={rating} />
     </div>
   );

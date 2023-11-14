@@ -2,6 +2,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  font-style: normal;
 }
 :root {
   --main-bg-color: #fff;
@@ -10,31 +11,32 @@
   --footer-bg-color: #000000;
   --font-color: #ff6060;
   --font-title-color: #ffffff;
+  --host-bg-color: #c4c4c4;
 }
 
-@mixin small-screen {
-  @media screen and (min-width: 800px) {
-    @content;
-  }
-}
 body {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: max-content;
   padding-bottom: 0;
-  margin: 0;
-  & main,
-  header {
-    display: flex;
-    padding: 0 100px;
-    flex-direction: column;
+}
+main,
+header {
+  display: flex;
+  padding: 0 7%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 1240px;
+  margin: auto;
+  @media (max-width: 768px) {
+    max-width: 335px;
     align-items: center;
   }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
+}
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

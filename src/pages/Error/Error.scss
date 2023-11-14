@@ -23,4 +23,19 @@
     color: var(--font-color);
     font-size: 18px;
   }
+  @media (max-width: 768px) {
+    padding: 113px 0;
+    gap: 113px;
+    &-title--h1 {
+      font-size: 96px;
+    }
+
+    &-title--h2 {
+      font-size: 18px;
+    }
+
+    &-nav-home {
+      font-size: 14px;
+    }
+  }
 }

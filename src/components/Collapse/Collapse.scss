@@ -7,8 +7,12 @@
   justify-content: space-between;
   align-self: stretch;
   align-items: center;
-  color: #fff;
+  color: var(--font-title-color);
   font-size: 24px;
+  @media (max-width: 768px) {
+    height: 30px;
+    font-size: 13px;
+  }
   .collapse-icon {
     width: 32px;
     height: 32px;
@@ -35,4 +39,8 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 142.6%;
+  @media (max-width: 768px) {
+      font-size: 12px;
+      padding: 0 20px 19px 20px;
+    }
 }
