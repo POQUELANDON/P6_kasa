@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import CardsList from '../../components/CardsList'
-import ImgAccueil from '../../assets/BannerAccueil.svg'
+import ImgAccueil from '../../assets/BannerAccueil.jpg'
 import '../Home/Home.scss'
 
 // Définition du composant Home

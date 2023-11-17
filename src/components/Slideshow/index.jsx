@@ -6,7 +6,7 @@ import { ReactComponent as ArrowRight } from '../../assets/ArrowRight.svg';
 import '../Slideshow/Slideshow.scss';
 
 // Définition du composant Slideshow
-function Slideshow({ images }) {
+function Slideshow({ images, alt }) {
   // Utilisation du hook useState pour gérer l'index de l'image actuelle
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -30,17 +30,17 @@ function Slideshow({ images }) {
       <img
         className="carrousel-image"
         src={images[currentImageIndex]}
-        alt="Logement"
+        alt={`${alt} photo n°${currentImageIndex + 1}`}
       />
       {images.length > 1 && (
         <div className="carrousel-navigation">
-          <button className="carrousel-button" onClick={previousImage}>
+          <button className="carrousel-button" aria-label="Bouton image précédente" onClick={previousImage}>
             <ArrowLeft />
           </button>
           <span className="carrousel-counter">{`${currentImageIndex + 1} / ${
             images.length
           }`}</span>
-          <button className="carrousel-button" onClick={nextImage}>
+          <button className="carrousel-button" aria-label="Bouton image suivante" onClick={nextImage}>
             <ArrowRight />
           </button>
         </div>

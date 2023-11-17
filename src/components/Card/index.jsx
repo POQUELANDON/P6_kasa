@@ -13,14 +13,11 @@ const Card = ({ logement }) => {
         {/* Titre du logement */}
         <h2 className='card-title'>{logement.title}</h2>
         {/* Image de couverture du logement */}
-        <div 
-          className='card-image' 
-          style={{ 
-            backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url(${logement.cover})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
+          <img 
+            className='card-image' 
+            alt={logement.title}
+            src={logement.cover}
+          />
       </article>
     </Link>
   );

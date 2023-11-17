@@ -1,27 +1,26 @@
-import React from 'react';
+// Importation des hooks nécessaires de React
+import React, { useContext } from 'react';
+// Importation du composant Card
 import Card from '../Card';
-import ListeProprietes from '../ListeProprietes';
+// Importation du contexte LogementContext
+import { LogementContext } from '../LogementContext';
+// Importation du fichier de style
 import '../CardsList/CardsList.scss';
 
 // Définition du composant CardsList
 const CardsList = () => {
-  // Fonction qui génère une liste de cartes à partir des données des logements
-  const cards = (logementsData) => {
-    return (
-      // Utilisation de la classe 'gallery' pour la mise en page de la liste de cartes
-      <section className='gallery'>
-        {/* Génération d'une carte pour chaque logement dans les données */}
-        {logementsData.map((logement) => (
-          // Utilisation du composant Card pour chaque logement
-          <Card key={logement.id} logement={logement} />
-        ))}
-      </section>
-    );
-  };
+  // Utilisation du hook useContext pour accéder aux données des logements
+  const logementsData = useContext(LogementContext);
 
-  // Rendu du composant ListeProprietes avec la fonction cards comme enfant
-  return <ListeProprietes url={'/logements.json'}>{cards}</ListeProprietes>;
+  // Création d'une liste de cartes à partir des données des logements
+  const cards = logementsData.map((logement) => (
+    // Utilisation du composant Card pour chaque logement
+    <Card key={logement.id} logement={logement} />
+  ));
+
+  // Rendu de la liste de cartes dans une section avec la classe 'gallery'
+  return <section className='gallery'>{cards}</section>;
 };
 
-// Export du composant CardsList
+// Exportation du composant CardsList
 export default CardsList;
