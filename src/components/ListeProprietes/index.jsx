@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { LogementContext } from '../LogementContext';
 
-const ListeProprietes = ({ url='/logements.json', children }) => {
+const ListeProprietes = ({ url, children }) => {
   const [logementsData, setLogementsData] = useState([]);
 
   useEffect(() => {
