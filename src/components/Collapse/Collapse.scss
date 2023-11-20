@@ -1,13 +1,16 @@
+@mixin box-btn-color {
+  background-color: var(--collapse-btn-bg-color);
+  color: var(--font-title-color);
+}
 .collapse-button {
   border: none;
   height: 52px;
-  background-color: var(--collapse-btn-bg-color);
+  @include box-btn-color;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-self: stretch;
   align-items: center;
-  color: var(--font-title-color);
   font-size: 24px;
   @media (max-width: 768px) {
     height: 30px;

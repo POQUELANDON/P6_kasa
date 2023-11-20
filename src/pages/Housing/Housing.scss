@@ -1,3 +1,7 @@
+@mixin box-btn-color {
+  background-color: var(--collapse-btn-bg-color);
+  color: var(--font-title-color);
+}
 .logement {
   display: flex;
   color: var(--font-color);
@@ -45,8 +49,7 @@
     min-width: 115px;
     height: 25px;
     border-radius: 10px;
-    background: var(--collapse-btn-bg-color);
-    color: var(--font-title-color);
+    @include box-btn-color;
     align-items: center;
     justify-content: center;
     flex-direction: row;
