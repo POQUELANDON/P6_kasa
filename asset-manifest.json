@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/P6_kasa/public/static/css/main.3d76bd9a.css",
+    "main.js": "/P6_kasa/public/static/js/main.b71d9972.js",
+    "static/js/787.55560dbc.chunk.js": "/P6_kasa/public/static/js/787.55560dbc.chunk.js",
+    "static/media/BannerApropos.jpg": "/P6_kasa/public/static/media/BannerApropos.105ab23730e00e1dcf23.jpg",
+    "static/media/BannerAccueil.jpg": "/P6_kasa/public/static/media/BannerAccueil.e8c1fbaee5a666e36ce0.jpg",
+    "static/media/LOGO.svg": "/P6_kasa/public/static/media/LOGO.a232433e1adad879dcd51ddd595e3356.svg",
+    "static/media/LOGOfooter.svg": "/P6_kasa/public/static/media/LOGOfooter.f84048defbdb7b04a3a0c61271595212.svg",
+    "index.html": "/P6_kasa/public/index.html",
+    "static/media/ChevronUp.svg": "/P6_kasa/public/static/media/ChevronUp.6651f5c5d7e87af25125664dff2d516e.svg",
+    "static/media/ArrowRight.svg": "/P6_kasa/public/static/media/ArrowRight.0fe895dfe4932e195f8e42bb884a7599.svg",
+    "static/media/ArrowLeft.svg": "/P6_kasa/public/static/media/ArrowLeft.a571ab7381a0cc6ec485d249322a1f03.svg",
+    "main.3d76bd9a.css.map": "/P6_kasa/public/static/css/main.3d76bd9a.css.map",
+    "main.b71d9972.js.map": "/P6_kasa/public/static/js/main.b71d9972.js.map",
+    "787.55560dbc.chunk.js.map": "/P6_kasa/public/static/js/787.55560dbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d76bd9a.css",
+    "static/js/main.b71d9972.js"
+  ]
+}
